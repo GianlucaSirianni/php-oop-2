@@ -1,4 +1,8 @@
 img{
-    width: 250px;
-    height: 400px   ;
+    width: 300px;
+    height: 350px   ;
+}
+
+.card{
+    height: 600px;
 }
