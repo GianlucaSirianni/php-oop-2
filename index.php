@@ -56,48 +56,34 @@ $generi = [
 
 <div class="container">
         <div class="row">
-            <?php foreach ($arrayCibo as $elem){
-            } { ?>
-                <div class="card" style="width:100%/2">
-                    <img src= "<?php echo $elem -> immagine ?>" class="card-img-top" alt="..." style="width:400px">
+            
+        <div class="col-4 ">
+               <?php foreach ($arrayCibo as $element) { ?>
+                   <div class="card">
+                    <img src= "<?php echo $element -> immagine ?>" class="card-img-top w-100" alt="...">
                     <div class="card-body ">
-                        <h4 class="card-title text-uppercase"><?php echo $elem -> nome ?></h4> 
-                        <h5 class="card-title opacity-50">
-                        <?php echo $elem -> prezzo ?>
-                        </h5>
-                        <h5 class="card-title opacity-50">
-                        <?php echo $elem -> category ?>
-                        </h5>
-                        <h5 class="card-title opacity-50">
-                        <?php echo $elem -> dimensioni ?>
-                        </h5>
-                        <p class="card-text opacity-50">
-                        <?php  ?>
+                        <h4 class="card-title text-dark text-uppercase"><?php echo $element -> nome ?></h4>
+                        <?php foreach($generi as $el) ?>
+                        <i class="<?php echo $el -> icona ?>"></i>
+                        <p>
+                            <?php echo $el -> nome ?>
                         </p>
-                    </div>
-                </div>
-        <?php } ?>
-        <?php foreach ($arrayCibo as $elem){
-            } { ?>
-                <div class="card" style="width:100%/2">
-                    <img src= "<?php echo $elem -> immagine ?>" class="card-img-top" alt="..." style="width:400px">
-                    <div class="card-body ">
-                        <h4 class="card-title text-uppercase"><?php echo $elem -> nome ?></h4> 
-                        <h5 class="card-title opacity-50">
-                        <?php echo $elem -> prezzo ?>
+                        <h5 class="card-title text-dark opacity-50">
+                        <?php echo $element -> prezzo  ?>
                         </h5>
-                        <h5 class="card-title opacity-50">
-                        <?php echo $elem -> category ?>
-                        </h5>
-                        <h5 class="card-title opacity-50">
-                        <?php echo $elem -> dimensioni ?>
-                        </h5>
-                        <p class="card-text opacity-50">
-                        <?php  ?>
+                        <p class="card-text text-dark opacity-50">
+                        <?php echo $element -> pesoNetto  ?>
+                        <p class="card-text text-dark opacity-50">
+                        <?php echo $element -> ingredienti  ?>
                         </p>
+                        </p>
+
                     </div>
-                </div>
-        <?php } ?>
+                </div> 
+        <?php } ?> 
+            </div>
+
+
         </div>
     </div>
 
