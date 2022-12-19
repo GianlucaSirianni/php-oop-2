@@ -12,7 +12,7 @@ class Accessori extends Prodotto{
         Float $prezzo,
         Generi $category,
         String $materiale,
-        Float $dimensioni
+        String $dimensioni
 
         )
         {

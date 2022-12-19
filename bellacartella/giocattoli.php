@@ -10,7 +10,7 @@ class Giocattoli extends Prodotto{
         Float $prezzo,
         Generi $category,
         String $caratteristiche,
-        Float $dimensioni
+        String $dimensioni
     
         )
     
